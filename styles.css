@@ -17,7 +17,7 @@ body {
   padding: 20px 60px;
   width: 100%;
   gap: 30px;
-  background-color:   rgba(233, 233, 233, 0.395);
+  background-color:  #ffffff;
   flex-wrap: wrap;
 }
 
@@ -32,13 +32,15 @@ body {
 }
 
 .nav-center a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 400;
-  font-size: clamp(11px, 1.5vw, 14px);
+  color: #000000;
+  /* font-weight: 400; */
   white-space: nowrap;
+  text-decoration: none;
 }
 
+.current-page {
+  border-bottom: 2px solid #000000;
+}
 .search-container {
   position: relative;
   flex: 1;
@@ -57,7 +59,7 @@ body {
   width: 100%;
   padding: 10px 16px 10px 48px;
   border: none;
-  background-color: #ffffff;
+  background-color: #e6e6e6;
   border-radius: 62px;
   font-size: clamp(12px, 1.5vw, 14px);
   outline: none;
@@ -91,4 +93,105 @@ body {
   .nav-right { order: 2; }
   .nav-center { order: 3; width: 100%; justify-content: center; margin-top: 8px; }
   .search-container { order: 4; width: 100%; max-width: 100%; margin-top: 8px; }
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-color: #ffffff;
+  padding: 40px;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #E6DCD3;
+  border-radius: 40px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-heading {
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 900;
+  color: #000000;
+  line-height: 1;
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+}
+
+.highlight-box {
+  background-color: #bda18c;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  color: #3F352C;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.hero-btn {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 18px 55px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #3F352C;
+}
+
+.hero-right {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-right img {
+  width: 100%;
+;
+  /* display: block; */
+}
+
+/* Hero responsive */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .hero-right {
+    order: 1;
+  }
+  
+  .hero-left {
+    order: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 20px;
+  }
+  
+  .hero-container {
+    border-radius: 20px;
+    padding: 30px 20px;
+  }
 }
