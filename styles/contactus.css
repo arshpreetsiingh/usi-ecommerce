@@ -5,10 +5,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F7F5F2;
+    background-color: #ffffff;
     color: #3F352C;
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    flex: 1;
 }
 
 .container {
@@ -32,11 +36,10 @@ h1 {
 }
 
 .cont-card {
-    background-color: #FFFFFF;
+    background-color: #E6DCD3;
     padding: 40px;
     border-radius: 10px;
     margin-bottom: 40px;
-   
 }
 
 label {
@@ -47,19 +50,21 @@ label {
     font-size: 14px;
 }
 
-input, textarea {
+.cont-card input, 
+.cont-card textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #bda18c;
     border-radius: 6px;
     font-size: 16px;
-    background: #F7F5F2;
+    background: #ffffff;
 }
 
-button {
-    background-color: #3F352C;
-    color: white;
+.cont-card button {
+    background-color: #000000;
+    color: #FFFFFF;
     padding: 14px;
+    border: none;
     border-radius: 10px;
     width: 100%;
     font-size: 16px;
@@ -67,8 +72,8 @@ button {
     font-weight: bold;
 }
 
-button:hover {
-    background-color: #2d2620;
+.cont-card button:hover {
+    background-color: #3F352C;
 }
 
 .info { 
@@ -80,20 +85,11 @@ button:hover {
 
 .item {
     padding: 24px;
-    background-color: #FFFFFF;
+    background-color: #E6DCD3;
     border-radius: 8px;
-    
 }
 
 .item p {
     color: #3F352C;
     font-size: 14px;
-}
-
-footer {
-    background-color: #3F352C;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 20px;
 }

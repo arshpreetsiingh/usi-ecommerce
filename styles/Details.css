@@ -1,90 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        
-        
-        .product-container{
-            display: flex;
-            flex-direction: row;
-            width: 90%;
-            margin: auto;
-            gap: 40px;
-            width: 420px;
-            margin: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #BDA18C;
-        }
+.product-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #E6DCD3;
+}
 
-        .product-info{
-            display:flex;
-            flex-direction: row;
-            vertical-align: top;
-            width: 50%;
-        }
-        .product-img{
-            width: 150%;
-            border-radius: 6px;
-        }
+.product-info {
+  display: flex;
+  flex-direction: row;
+  vertical-align: top;
+  width: 50%;
+}
+.product-img {
+  width: 100%;
+  border-radius: 6px;
+}
 
-        .product-img img{
-         width: 100%;
-        }
-    
-        .heading{
-            font-size: 25px;
-            margin: 12px 0 6px;
-        }
-        
-        .rating1{
-            font-family: bold;
-            color: #15120e;
-            font-size: 16px;
-        }
+.product-img img {
+  width: 100%;
+}
 
-        .rating1-span{
-            color:#555;
-            margin-left: 6px;
-        }
+.heading {
+  font-size: 25px;
+  margin: 12px 0 6px;
+}
 
-        .price{
-            font-size: 23px;
-            color: #B12704;
-            margin:8px 0;
-        }
+.rating1 {
+  font-family: bold;
+  color: #15120e;
+  font-size: 16px;
+}
 
-        .offer{
-            font-size: 12px;
-            color:#0e0b0b;
-        }
-        span .offer-span{
-            font-weight: 500;
-        }
-        .all-buttons{
-            margin-top: 8px;
-            margin-right: 20px;
-        }
-        .button1{
-            font-size: 16px;
-            color: rgb(225, 24, 24);
-            border-color: rgb(225, 24, 24);
-            border-radius: 6px;
-            padding: 10px 15px;
-            margin-right: 10px;
-        }
-        .button2{
-            font-size: 16px;
-            color: white;
-            background-color: rgb(225, 24, 24);
-            border-color: rgb(205, 122, 27);
-            border-radius: 6px;
-            padding: 11px 16px;
-            margin-right: 10px;
-        }
-        .button1:hover{
-            cursor:pointer;
-            transition: background-color 0.15;
-            background-color: rgb(225, 24, 24);
-            color: white;
-        }
-        .button2:hover{
-            cursor:pointer;
-            transition: opacity 0.15;
-        }
+.rating1-span {
+  color: #555;
+  margin-left: 6px;
+}
+
+.price {
+  font-size: 23px;
+  color: #b12704;
+  margin: 8px 0;
+}
+
+.offer {
+  font-size: 12px;
+  color: #0e0b0b;
+}
+span .offer-span {
+  font-weight: 500;
+}
+.all-buttons {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+.button1 {
+  font-size: 16px;
+  color: rgb(225, 24, 24);
+  background-color: white;
+  border: 2px solid rgb(225, 24, 24);
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.button2 {
+  font-size: 16px;
+  color: white;
+  background-color: rgb(225, 24, 24);
+  border: 2px solid rgb(225, 24, 24);
+  border-radius: 6px;
+  padding: 11px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.button1:hover {
+  cursor: pointer;
+  transition: background-color 0.15;
+  background-color: rgb(225, 24, 24);
+  color: white;
+}
+.button2:hover {
+  cursor: pointer;
+  transition: opacity 0.15;
+}

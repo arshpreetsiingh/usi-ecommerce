@@ -17,8 +17,8 @@ body{
 .Login{
   width:400px;
   padding:40px;
-  color: #e6dcd3;;
-  background:rgb(133, 110, 104);
+  color: #3F352C;
+  background: #E6DCD3;
   border-radius:12px;
   text-align:center;
 }
@@ -44,11 +44,16 @@ body{
 .button button{
   width:100%;
   padding:12px;
-  background:#41362e;
-  color:white;
+  background: #000000;
+  color: #FFFFFF;
+  border: none;
   border-radius:6px;
   font-size:15px;
   cursor:pointer;
+}
+
+.button button:hover{
+  background-color: #3F352C;
 }
   
 p{

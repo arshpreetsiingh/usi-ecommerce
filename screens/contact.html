@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/navbar-footer.css">
     <link rel="stylesheet" href="../styles/contactus.css">
 </head>
 <body>
-  
+    <!-- Nav Bar -->
+    <header class="navbar">
+
+        <!--Nav Left side logo Only-->
+        <div class="nav-left">
+            <span class="logo">
+                Not decided yet
+            </span>
+        </div>
+
+        <!-- Navbar center links to other pages -->
+        <div class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="#">About Us</a>
+            <a href="./contact.html" class="current-page">Contact Us</a>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-container">
+            <img src="../assets/home/search-icon.png" alt="Search" class="search-icon">
+            <input type="text" class="search-bar" placeholder="Search for products...">
+        </div>
+
+        <!-- Navbar right side icons -->
+        <div class="nav-right">
+            <a href="#" class="icon-btn">
+                <img src="../assets/home/cart-img.png" alt="Cart" width="24" height="24">
+            </a>
+            <a href="./signup.html" class="btn-signup">signup</a>
+            <a href="./Login.html" class="btn-login">login</a>
+        </div>
+
+    </header>
+
     <div class="contact">
         <div class="container">
             <h1>Contact With Us</h1>
@@ -56,8 +91,55 @@
             </div>
         </div>
     </div>
-    <footer>
-            <p>© 2026 EcommerceWebsite. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">About Us</h3>
+                    <p>Your trusted marketplace for quality products. We curate the best items to bring you an exceptional shopping experience.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Men's Fashion</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sports & Fitness</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>Email: info@example.com</li>
+                        <li>Phone: +91 53xxxxxxx</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 E-Commerce. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
