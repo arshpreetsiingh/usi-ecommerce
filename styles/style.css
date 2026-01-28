@@ -10,7 +10,80 @@ body {
   background: #F7F5F2;
   color: #3F352C;
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  width: 100%;
+  gap: 30px;
+  background-color:  #ffffff;
+  flex-wrap: wrap;
+}
 
+.logo {
+  width:clamp(100px, 15vw, 150px);
+  height: auto;
+}
+
+.nav-center {
+  display: flex;
+  gap: clamp(12px, 2vw, 24px);
+}
+
+.nav-center a {
+  color: #000000;
+  /* font-weight: 400; */
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.current-page {
+  border-bottom: 2px solid #000000;
+}
+.search-container {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.search-icon {
+  position: absolute;
+  margin: 12px;
+  width: 15px;
+  height: auto;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 16px 10px 48px;
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 62px;
+  font-size: 14px;
+  outline: none;
+}
+
+.nav-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon-btn {
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.icon-btn img {
+  width: 20px;
+  height: auto;
+}
 /* Sections */
 .section {
   padding: 3rem 1rem;
