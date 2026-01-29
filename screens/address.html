@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Addresses - Delivery Address Selection</title>
+    <link rel="stylesheet" href="../styles/ecommerce.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <span class="back-link">← Back</span>
+        <h2>Select Delivery Address</h2>
+    </div>
+</div>
+
+<div class="container address-container">
+    
+    <div class="addresses-section">
+        <div class="section-header">
+            <h3>Saved Addresses</h3>
+            <button class="add-new-btn">+ Add New Address</button>
+        </div>
+
+        <!-- Address Card 1 -->
+        <div class="address-card">
+            <div class="address-radio-wrapper">
+                <input type="radio" name="address" id="addr1" checked>
+            </div>
+            <label for="addr1" class="address-label">
+                <div class="address-header">
+                    <div class="address-name-type">
+                        <h4>Veena</h4>
+                        <span class="address-type">Home</span>
+                    </div>
+                    <div class="address-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="address-details">
+                    <p>68-8-7, State Bank Street</p>
+                    <p>vakada, Andhra Pradesh - 533003</p>
+                    <p><strong>Phone:</strong> 1485274594</p>
+                </div>
+            </label>
+            <button class="deliver-btn">Deliver Here</button>
+        </div>
+
+        <!-- Address Card 2 -->
+        <div class="address-card">
+            <div class="address-radio-wrapper">
+                <input type="radio" name="address" id="addr2">
+            </div>
+            <label for="addr2" class="address-label">
+                <div class="address-header">
+                    <div class="address-name-type">
+                        <h4>Pinky</h4>
+                        <span class="address-type">Work</span>
+                    </div>
+                    <div class="address-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="address-details">
+                    <p>Lodha Palava, Phase 2</p>
+                    <p>Thane, Maharashtra - 421204</p>
+                    <p><strong>Phone:</strong> 1485274594</p>
+                </div>
+            </label>
+            <button class="deliver-btn">Deliver Here</button>
+        </div>
+
+        <!-- Add New Address Card -->
+        <div class="address-card add-new-card" id="newAddressForm" style="display:none;">
+            <div class="address-radio-wrapper">
+                <input type="radio" name="address" id="addr-new">
+            </div>
+            <label for="addr-new" class="address-label">
+                <div class="form-header">
+                    <h4>Add New Address</h4>
+                </div>
+                <div class="form-container">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter your name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" placeholder="Enter phone number" class="form-input">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address Line 1</label>
+                        <input type="text" placeholder="House No., Building Name" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address Line 2</label>
+                        <input type="text" placeholder="Road name, Area, Colony" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Landmark</label>
+                        <input type="text" placeholder="e.g. near apollo hospital" class="form-input">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter city" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter state" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>PIN Code</label>
+                            <input type="text" placeholder="Enter PIN code" class="form-input">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address Type</label>
+                        <div class="address-type-selector">
+                            <button class="type-btn active">Home</button>
+                            <button class="type-btn">Work</button>
+                            <button class="type-btn">Other</button>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="save-btn">Save Address</button>
+                        <button class="cancel-btn">Cancel</button>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+    </div>
+
+    <!-- Summary Section -->
+    <div class="card summary-section">
+        <div class="summary-header">Order Summary</div>
+        <div class="summary-details">
+            <div class="summary-item">
+                <span>Price (2 item)</span>
+                <span>₹1,71,499</span>
+            </div>
+            <div class="summary-item">
+                <span>Delivery Charges</span>
+                <span class="free">Free</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-item total-item">
+                <span>Total Payable</span>
+                <span>₹1,71,499</span>
+            </div>
+        </div>
+        <a href="payment.html" class="btn confirm-btn">Proceed to Payment</a>
+    </div>
+
+</div>
+
+<script>
+    document.querySelector('.add-new-btn').addEventListener('click', function() {
+        const form = document.getElementById('newAddressForm');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    });
+
+    document.querySelector('.cancel-btn').addEventListener('click', function() {
+        document.getElementById('newAddressForm').style.display = 'none';
+    });
+
+    // Address type selector
+    document.querySelectorAll('.type-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>

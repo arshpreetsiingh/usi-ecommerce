@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment - Select Payment Method</title>
+    <link rel="stylesheet" href="../styles/ecommerce.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <span class="back-link">← Back</span>
+        <h1 >PAYMENT METHOD</h1>
+    </div>
+</div>
+
+<div class="container address-container">
+    
+    <div class="addresses-section payment-section">
+        <div class="section-header">
+            <h3>Select Payment Method</h3>
+        </div>
+
+        <!-- Credit Card Option -->
+        <div class="payment-card">
+            <div class="payment-radio-wrapper">
+                <input type="radio" name="payment" id="card" checked>
+            </div>
+            <label for="card" class="payment-label">
+                <div class="payment-header">
+                    <div class="payment-icon-name">
+                        <span class="payment-icon">💳</span>
+                        <h4>Credit / Debit Card</h4>
+                    </div>
+                </div>
+                <div class="payment-form-content" id="cardForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Cardholder Name</label>
+                            <input type="text" placeholder="Enter cardholder name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="Enter 16-digit card number" class="form-input">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="text" placeholder="3-digit CVV" class="form-input">
+                        </div>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <!-- Debit Card Option -->
+        <div class="payment-card">
+            <div class="payment-radio-wrapper">
+                <input type="radio" name="payment" id="debit">
+            </div>
+            <label for="debit" class="payment-label">
+                <div class="payment-header">
+                    <div class="payment-icon-name">
+                        <span class="payment-icon">🏦</span>
+                        <h4>Net Banking</h4>
+                    </div>
+                </div>
+                <div class="payment-form-content" id="bankForm" style="display:none;">
+                    <div class="bank-list">
+                        <div class="bank-option">
+                            <input type="radio" name="bank" id="sbi">
+                            <label for="sbi">State Bank of India (SBI)</label>
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank" id="hdfc">
+                            <label for="hdfc">HDFC Bank</label>
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank" id="icici">
+                            <label for="icici">ICICI Bank</label>
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank" id="axis">
+                            <label for="axis">Axis Bank</label>
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank" id="kotak">
+                            <label for="kotak">Kotak Mahindra Bank</label>
+                        </div>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <!-- UPI Option -->
+        <div class="payment-card">
+            <div class="payment-radio-wrapper">
+                <input type="radio" name="payment" id="upi">
+            </div>
+            <label for="upi" class="payment-label">
+                <div class="payment-header">
+                    <div class="payment-icon-name">
+                        <span class="payment-icon">📱</span>
+                        <h4>UPI / Google Pay / PhonePe</h4>
+                    </div>
+                </div>
+                <div class="payment-form-content" id="upiForm" style="display:none;">
+                    <div class="form-group">
+                        <label>UPI ID</label>
+                        <input type="text" placeholder="yourname@bankname" class="form-input">
+                    </div>
+                    <p class="info-text">You will be redirected to your payment app</p>
+                </div>
+            </label>
+        </div>
+
+
+        <!-- Cash on Delivery Option -->
+        <div class="payment-card">
+            <div class="payment-radio-wrapper">
+                <input type="radio" name="payment" id="cod">
+            </div>
+            <label for="cod" class="payment-label">
+                <div class="payment-header">
+                    <div class="payment-icon-name">
+                        <span class="payment-icon">🚚</span>
+                        <h4>Cash on Delivery</h4>
+                    </div>
+                </div>
+                <p class="cod-info">Pay when you receive your order</p>
+            </label>
+        </div>
+
+        <!-- Coupon Section -->
+        <div class="coupon-section">
+            <h3>Apply Coupon Code</h3>
+            <div class="coupon-input-group">
+                <input type="text" placeholder="Enter coupon code" class="coupon-input">
+                <button class="apply-coupon-btn">Apply</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Summary Section -->
+    <div class="card summary-section">
+        <div class="summary-header">Order Summary</div>
+        <div class="summary-details">
+            <div class="summary-item">
+                <span>Price (2 item)</span>
+                <span>₹1,71,499</span>
+            </div>
+            <div class="summary-item">
+                <span>Delivery Charges</span>
+                <span class="free">Free</span>
+            </div>
+            <div class="summary-item">
+                <span>Discount</span>
+                <span class="discount">-₹0</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-item total-item">
+                <span>Total Payable</span>
+                <span>₹1,71,499</span>
+            </div>
+        </div>
+
+        <div class="security-info">
+            <p>✓ Safe & Secure Payments</p>
+            <p>✓ SSL Encrypted</p>
+            <p>✓ 100% Safe</p>
+        </div>
+
+        <button class="btn confirm-btn place-order-btn">Place Order</button>
+    </div>
+
+</div>
+
+<script>
+    // Payment method switching
+    const paymentOptions = document.querySelectorAll('input[name="payment"]');
+    const formContents = {
+        'card': document.getElementById('cardForm'),
+        'debit': document.getElementById('bankForm'),
+        'upi': document.getElementById('upiForm'),
+        'wallet': null,
+        'cod': null
+    };
+
+    paymentOptions.forEach(option => {
+        option.addEventListener('change', function() {
+            // Hide all forms
+            Object.values(formContents).forEach(form => {
+                if (form) form.style.display = 'none';
+            });
+            
+            // Show selected form
+            if (formContents[this.id]) {
+                formContents[this.id].style.display = 'block';
+            }
+        });
+    });
+
+    // Apply coupon button
+    document.querySelector('.apply-coupon-btn').addEventListener('click', function() {
+        const couponCode = document.querySelector('.coupon-input').value;
+        if (couponCode) {
+            alert('Coupon "' + couponCode + '" applied successfully!');
+        } else {
+            alert('Please enter a coupon code');
+        }
+    });
+
+    // Place order
+    document.querySelector('.place-order-btn').addEventListener('click', function() {
+        const selectedPayment = document.querySelector('input[name="payment"]:checked').id;
+        alert('Order placed successfully with ' + selectedPayment.toUpperCase() + '!');
+    });
+</script>
+
+</body>
+</html>
