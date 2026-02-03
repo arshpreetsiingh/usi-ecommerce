@@ -1,19 +1,18 @@
 *{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    box-shadow: #3f352c;
-    font-family: Arial, sans-serif;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: #3f352c;
+  font-family: Arial, sans-serif;   
 }
 body{
-    height:100vh;
-    display:flex;
-    box-shadow: #4d4539;
-    justify-content:center;
-    align-items:center;
-    background: #f7f5f2;;
-    font-family:Arial, sans-serif;
+  height:100vh;
+  display:flex;
+  box-shadow: #4d4539;
+  justify-content:center;
+  align-items:center;
+  background: #f7f5f2;;
+  font-family:Arial, sans-serif;
 }
 .signup{
   width:400px;
@@ -28,12 +27,12 @@ body{
   text-align:center;
 }
 .signup div{
-    margin: 20px;
+  margin: 20px;
 }
 .signup h1{
-    margin-bottom:25px;
-    font-size:26px;
-    letter-spacing:1px;
+  margin-bottom:25px;
+  font-size:26px;
+  letter-spacing:1px;
 }
 .one input,
 .two input,
@@ -41,24 +40,24 @@ body{
 .four input,
 .five input
 {
-    width:100%;
-    padding:12px;
-    font-size:15px;
-    border:2px solid #ccc;
-    border-radius:6px;
+  width:100%;
+  padding:12px;
+  font-size:15px;
+  border:2px solid #ccc;
+  border-radius:6px;
 }
 .button{
   margin-top:10px;
 }
 .button button{
-    width:100%;
-    padding: 10px;
-    background:#41362e;
-    color:white;
-    border:none;
-    border-radius:6px;
-    font-size:15px;
-    cursor:pointer;
+  width:100%;
+  padding: 10px;
+  background:#41362e;
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-size:15px;
+  cursor:pointer;
 }
   
 p{
