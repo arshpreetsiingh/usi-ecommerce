@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #E6DCD3;
+
+}
+
+body {
+    margin: 50px 50px;
+}
+
+.heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+hr {
+    color: black;
+}
+
+.main-prod-img {
+    width: 80%;
+    border: 2px solid whitesmoke;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.prod-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.rating {
+    font-size: 20px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(182, 22, 22);
+}
+
+span {
+    font-weight: bold;
+}
+
+.price-line {
+    color: rgb(73, 71, 71);
+}
+
+.select-size {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+}
+
+.buttons {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.size-buttons,
+.dis-size-buttons {
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 2px solid rgb(153, 148, 148);
+    font-weight: bold;
+    width: 60px;
+}
+
+.dis-size-buttons {
+    text-decoration: line-through;
+}
+
+.size-buttons:hover {
+    color: white;
+    background-color: rgb(182, 22, 22);
+    border: 2px solid rgb(182, 22, 22);
+}
+
+.add-to-cart-btn {
+    width: 240px;
+    padding: 15px 30px;
+    border: 2px solid rgb(182, 22, 22);
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(182, 22, 22);
+    margin: 20px 20px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgb(182, 22, 22);
+    color: white;
+}
+
+.buy-now-button {
+    width: 240px;
+    padding: 16px 40px;
+    border: 2px solid rgb(182, 22, 22);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(182, 22, 22);
+    color: white;
+    margin: 20px 20px;
+}
+
+.buy-now-btn:hover {
+    transition: ease-in-out 0.15;
+    transform: scale(1.1);
+}
+
+.add-to-wishlist-btn {
+    width: 300px;
+    padding: 15px 30px;
+    border: 2px solid rgb(182, 22, 22);
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(182, 22, 22);
+    margin: 20px 0px;
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.add-to-wishlist-btn:hover {
+    background-color: rgb(182, 22, 22);
+    color: white;
+}
+
+.quantity-btn {
+    font-size: 20px;
+    border: 2px solid rgb(153, 148, 148);
+    font-weight: bold;
+    width: 50px;
+}
+
+.add-quantity-btn {
+    font-size: 20px;
+    border: 2px solid rgb(153, 148, 148);
+    font-weight: bold;
+    width: 40px;
+}
+
+.add-quantity-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.product-description,
+.product-details {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.report-issue {
+    font-size: 20px;
+}
+
+i {
+    color: black;
+    font-size: 20px;
+}
+
+.share {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 2px 2px;
+    font-weight: bold;
+}
+
+.share:hover {
+    text-decoration: underline;
+}
+
+.icons-btn {
+    font-size: 20px;
+}
+
+.similar-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.similar-products,
+.customer-viewed-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.price-tags {
+    font-weight: bold;
+    color: rgb(182, 22, 22);
+}
+
+.related-products,
+.viewed-products {
+
+    border-radius: 10px;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.star-rating {
+    font-size: 15px;
+    color: blue;
+
+}
+
+.no-of-ratings {
+    margin: 10px 0px;
+    color: rgb(71, 69, 69);
+    ;
+}
+
+meter {
+    margin: 0px 30px;
+}
