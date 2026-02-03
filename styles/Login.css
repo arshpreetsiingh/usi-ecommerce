@@ -2,23 +2,23 @@
   margin:0px;
   padding: 0px;
   box-sizing: border-box;
-  box-shadow: #3f352c;
   font-family: Arial, sans-serif;
 }
 body{
   height:100vh;
   display:flex;
-  box-shadow: #4d4539;
   justify-content:center;
   align-items:center;
-  background:#f7f5f2;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-family:Arial, sans-serif;
 }
 .Login{
   width:400px;
   padding:40px;
-  color: #3F352C;
-  background: #E6DCD3;
+  color: #100801;
   border-radius:12px;
   text-align:center;
 }
@@ -44,16 +44,11 @@ body{
 .button button{
   width:100%;
   padding:12px;
-  background: #000000;
-  color: #FFFFFF;
-  border: none;
+  background:#41362e;
+  color:rgb(20, 1, 1);
   border-radius:6px;
   font-size:15px;
   cursor:pointer;
-}
-
-.button button:hover{
-  background-color: #3F352C;
 }
   
 p{
@@ -62,6 +57,6 @@ p{
 
 a{
   text-decoration:none;
-  color:#2575fc;
+  color:#223d6d;
   font-weight:bold;
 }
