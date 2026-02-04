@@ -412,8 +412,8 @@ h2 {
 
 }
 
-/*small phones (480px and below) */
-@media (max-width: 480px) {
+/*small phones (576px and below) */
+@media (max-width: 576px) {
     .team-grid {
         grid-template-columns: 1fr;
     }
