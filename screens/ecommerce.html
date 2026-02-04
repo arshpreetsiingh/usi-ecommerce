@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cart</title>
+    <link rel="stylesheet" href="../styles/navbar-footer.css">
     <link rel="stylesheet" href="../styles/ecommerce.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -11,27 +12,52 @@
 </head>
 <body>
 
-     <div class="header d-flex align-items-center px-4">
+    <!-- Nav Bar -->
+    <header class="navbar">
 
-    <a href="../index.html" class="home-link d-flex align-items-center">
-        <i class="bi bi-house-fill"></i>
-        <span>Home</span>
-    </a>
+        <!--Nav Left side logo Only-->
+        <div class="nav-left">
+            <span class="logo">
+                Not decided yet
+            </span>
+        </div>
 
-    
-    <h1 class="cart-title mx-auto">My Cart</h1>
+        <!-- Navbar center links to other pages -->
+        <div class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
 
-    
-    <div class="header-icons d-flex align-items-center">
-        <i class="bi bi-heart"></i>
-        <i class="bi bi-person-circle"></i>
-    </div>
+        <!-- Search bar -->
+        <div class="search-container">
+            <img src="../assets/home/search-icon.png" alt="Search" class="search-icon">
+            <input type="text" class="search-bar" placeholder="Search for products...">
+        </div>
 
-</div>
+        <!-- Navbar right side icons -->
+        <div class="nav-right">
+            <a href="./ecommerce.html" class="icon-btn">
+                <img src="../assets/home/cart-img.png" alt="Cart" width="24" height="24">
+            </a>
+            <a href="./signup.html" class="btn-signup">signup</a>
+            <a href="./Login.html" class="btn-login">login</a>
+        </div>
 
+    </header>
 
-
-
+    <!-- <div class="header d-flex align-items-center px-4">
+        <a href="../index.html" class="home-link d-flex align-items-center">
+            <i class="bi bi-house-fill"></i>
+            <span>Home</span>
+        </a>
+        <h1 class="cart-title mx-auto">My Cart</h1>
+        <div class="header-icons d-flex align-items-center">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-person-circle"></i>
+        </div>
+    </div> -->
 
 <div class="container">
 
@@ -119,6 +145,55 @@
         <div class="suggest-card">Power Bank</div>
     </div>
 </div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="footer-heading">ABOUT</h3>
+                <ul class="footer-links">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-heading">HELP</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-heading">POLICY</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-heading">CONTACT US</h3>
+                <ul class="footer-contact">
+                    <li>Email: support@ecommerce.com</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Address: 123 Fashion St, NY 10001</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Commerce. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
