@@ -1,115 +1,182 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
 body {
-    background-color: #f1f3f6;
-    padding-top: 60px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f1f3f6;
+    color: #212121;
 }
-
 
 .header {
-    background-color: #E6DCD3;
-    color: #000000;
-    padding: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
+    background: #E6DCD3;
+    color: black;
+    height: 70px;
 }
 
-.header h1 {
-    font-size: 20px;
-    font-weight: 500;
+.cart-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+    color: #1a1a1a;
 }
 
-.header h2 {
+.home-link {
+    color: black;
+    text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
+    gap: 6px;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.home-link i {
+    font-size: 22px;
 }
 
-.back-link {
-    position: absolute;
-    left: 0;
+.header-icons i {
+    font-size: 22px;
+    margin-left: 20px;
     cursor: pointer;
-    font-size: 14px;
-    opacity: 0.9;
 }
 
-.back-link:hover {
-    opacity: 1;
+.header-icons i:hover {
+    opacity: 0.8;
 }
 
-/* ===== CONTAINER & LAYOUT ===== */
+
+
 .container {
-    width: 90%;
-    margin: 15px auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.cart-box {
+    width: 70%;
+}
+
+.summary {
+    width: 30%;
+    height: fit-content;
+    padding: 20px !important;
+}
+
+.summary h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #878787;
+    margin: 12px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.summary p {
+    font-size: 14px;
+    color: #878787;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.product {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.product img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
+}
+
+.rating i {
+    font-size: 16px;
+}
+
+.price {
+    color: #fb641b;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.qty-box button {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 5px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.qty-box button:hover {
+    background: #2874f0;
+    color: white;
+    border-color: #2874f0;
+}
+
+.qty-box button:active {
+    transform: scale(0.95);
+}
+
+.qty-box span {
+    font-weight: 600;
+}
+
+
+.summary .total {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fb641b;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    background: #fb641b;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* Suggestions */
+
+.suggestions {
+    padding: 20px;
+}
+
+.suggestion-cards {
     display: flex;
     gap: 15px;
 }
 
-.address-container {
-    gap: 20px;
-}
-
-.addresses-section {
+.suggest-card {
     flex: 1;
-}
-
-/* ===== CARD STYLES ===== */
-.card {
-    background-color: #f7f5f2;
-    padding: 12px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background: white;
+    padding: 20px;
     text-align: center;
-}
-
-/* ===== SECTION HEADER ===== */
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.section-header h3 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #212121;
-}
-
-.add-new-btn {
-    background-color: #2874f0;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
 }
 
-.add-new-btn:hover {
-    background-color: #1e5db8;
+.suggest-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* ===== ADDRESS CARDS ===== */
 .address-card {
     border: 1px solid #ddd;
     border-radius: 4px;

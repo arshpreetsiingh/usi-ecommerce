@@ -3,19 +3,27 @@
 <head>
     <title>Payment - Select Payment Method</title>
     <link rel="stylesheet" href="../styles/ecommerce.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-<div class="header">
-    <div class="header-content">
-        <span class="back-link">← Back</span>
-        <h1 >PAYMENT METHOD</h1>
+<div class="header d-flex align-items-center px-4">
+    <a href="../screens/address.html" class="home-link d-flex align-items-center">
+        <i class="bi bi-arrow-left"></i>
+        <span>Back</span>
+    </a>
+    <h1 class="cart-title mx-auto">Payment Method</h1>
+    <div class="header-icons d-flex align-items-center">
+        <i class="bi bi-heart"></i>
+        <i class="bi bi-person-circle"></i>
     </div>
 </div>
 
-<div class="container address-container">
-    
-    <div class="addresses-section payment-section">
+<div class="container">
+    <div class="card cart-box">
         <div class="section-header">
             <h3>Select Payment Method</h3>
         </div>
@@ -28,7 +36,6 @@
             <label for="card" class="payment-label">
                 <div class="payment-header">
                     <div class="payment-icon-name">
-                        <span class="payment-icon">💳</span>
                         <h4>Credit / Debit Card</h4>
                     </div>
                 </div>
@@ -66,7 +73,6 @@
             <label for="debit" class="payment-label">
                 <div class="payment-header">
                     <div class="payment-icon-name">
-                        <span class="payment-icon">🏦</span>
                         <h4>Net Banking</h4>
                     </div>
                 </div>
@@ -105,7 +111,6 @@
             <label for="upi" class="payment-label">
                 <div class="payment-header">
                     <div class="payment-icon-name">
-                        <span class="payment-icon">📱</span>
                         <h4>UPI / Google Pay / PhonePe</h4>
                     </div>
                 </div>
@@ -128,7 +133,6 @@
             <label for="cod" class="payment-label">
                 <div class="payment-header">
                     <div class="payment-icon-name">
-                        <span class="payment-icon">🚚</span>
                         <h4>Cash on Delivery</h4>
                     </div>
                 </div>
@@ -148,8 +152,8 @@
     </div>
 
     <!-- Summary Section -->
-    <div class="card summary-section">
-        <div class="summary-header">Order Summary</div>
+    <div class="card summary">
+        <div class="summary-header"><h3>Order Summary</h3></div>
         <div class="summary-details">
             <div class="summary-item">
                 <span>Price (2 item)</span>
@@ -176,7 +180,7 @@
             <p>✓ 100% Safe</p>
         </div>
 
-        <button class="btn confirm-btn place-order-btn">Place Order</button>
+        <button class="btn btn-warning place-order-btn">Place Order</button>
     </div>
 
 </div>
