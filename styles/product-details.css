@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #E6DCD3;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (min-width: 480px) and (max-width: 1000px) {
@@ -13,11 +13,9 @@
         height: auto;
     }
 }
-
-body {
+.wrapper{
     margin: 50px 50px;
 }
-
 a {
     text-decoration: none;
 }
