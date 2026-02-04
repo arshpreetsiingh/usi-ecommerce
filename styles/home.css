@@ -17,13 +17,12 @@ body {
 
 .hero-container {
   max-width: 100%;
-  margin: 0 auto;
   background-color: #E6DCD3;
   border-radius: 40px;
   padding: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 .hero-left {
@@ -33,7 +32,7 @@ body {
 
 .hero-heading {
   font-size: 80px;
-  font-weight: 900;
+  font-weight: bold;
   color: #000000;
   line-height: 1;
   margin-bottom: 30px; 
@@ -56,7 +55,6 @@ body {
   color: #FFFFFF;
   padding: 18px 55px;
   font-size: 16px;
-  font-weight: 500;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -91,7 +89,6 @@ body {
 
 .categories-heading {
   font-size: 40px;
-  font-weight: 800;
   color: #000000;
   margin-bottom: 40px;
   text-align: center;
@@ -107,6 +104,8 @@ body {
   background-color: #E6DCD3;
   cursor: pointer;
   box-shadow: 0 0 10px #3F352C;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .category-card:hover {
@@ -130,7 +129,7 @@ body {
 .category-name {
   padding: 20px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
   color: #3F352C;
   text-align: center;
 }
@@ -168,7 +167,7 @@ body {
 
 .promo-heading {
   font-size: 70px;
-  font-weight: 900;
+  font-weight: bold;
   color: #000000;
   line-height: 1;
   margin-bottom: 30px;
@@ -186,10 +185,14 @@ body {
   margin-bottom: 20px;
   line-height: 1;
 }
-
+.promo-terms{
+  font-size: 14px;
+  color: #3F352C;
+  margin-bottom: 10px;
+}
 .promo-date {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: bold;
   color: #3F352C;
   margin-bottom: 10px;
 }
@@ -199,8 +202,67 @@ body {
   color: #FFFFFF;
   padding: 18px 55px;
   font-size: 16px;
-  font-weight: 500;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.promo-btn a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .hero-container,
+  .promo-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .hero-left,
+  .hero-right,
+  .promo-left,
+  .promo-right {
+    max-width: 100%;
+  }
+
+  .promo-right {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .hero-heading,
+  .promo-heading {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section,
+  .promo-section {
+    padding: 20px;
+  }
+
+  .hero-container,
+  .promo-container {
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .hero-heading,
+  .promo-heading {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle,
+  .promo-description {
+    font-size: 16px;
+  }
+
+  .hero-btn,
+  .promo-btn {
+    padding: 14px 40px;
+  }
 }
