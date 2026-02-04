@@ -2,16 +2,32 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #E6DCD3;
+}
 
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+    .similar-products,
+    .customer-viewed-items{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 250px;
+        height: auto;
+    }
 }
 
 body {
     margin: 50px 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .heading {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
+    font-size: 38px;
+    margin: 5px 0px;
+    color: rgb(87, 30, 7);
+
 }
 
 hr {
@@ -183,6 +199,8 @@ i {
 .similar-img {
     display: block;
     margin: 0 auto;
+    width: 180px;
+    height: 240px;
     border-radius: 10px;
     border: 2px solid white;
 }
@@ -191,7 +209,6 @@ i {
 .customer-viewed-items {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .price-tags {
@@ -212,17 +229,63 @@ i {
 }
 
 .star-rating {
-    font-size: 15px;
+    font-size: 22px;
     color: blue;
+    padding-bottom: 10px;
+
 
 }
 
 .no-of-ratings {
     margin: 10px 0px;
     color: rgb(71, 69, 69);
-    ;
 }
 
 meter {
-    margin: 0px 30px;
+    width: 280px;
+    height: 30px;
+    margin: 0px 15px;
+}
+
+.customer-reviews h2 {
+    font-size: 35px;
+
+}
+
+.reviews-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.help,
+.writing-review {
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin: 10px 2px;
+}
+
+.name-1,
+.name-2,
+.name-3 {
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.review-date {
+    color: rgb(98, 98, 98);
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+
+.hr {
+    width: 320px;
+}
+
+.purchase {
+    color: rgb(178, 22, 22);
+    margin: 0px 6px;
 }
