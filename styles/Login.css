@@ -9,9 +9,6 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   font-family:Arial, sans-serif;
 }
 .Login{
@@ -43,7 +40,7 @@ body{
 .button button{
   width:100%;
   padding:12px;
-  background:#41362e;
+  background:#6a574a;
   color:rgb(20, 1, 1);
   border-radius:6px;
   font-size:15px;
