@@ -7,11 +7,10 @@
 body{
   height:100vh;
   display:flex;
+  border:#181411;
+  background: #f7f5f2;
   justify-content:center;
   align-items:center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   font-family:Arial, sans-serif;
 }
 .Login{
@@ -23,7 +22,7 @@ body{
 }
 .Login h1{
   margin-bottom:25px;
-  font-size:26px;
+  font-size:30px;
   letter-spacing:1px;
 }
 .one, .two{
@@ -43,10 +42,10 @@ body{
 .button button{
   width:100%;
   padding:12px;
-  background:#41362e;
-  color:rgb(20, 1, 1);
+  background:#6a574a;
+  color:whitesmoke;
   border-radius:6px;
-  font-size:15px;
+  font-size:  20px;
   cursor:pointer;
 }
   
