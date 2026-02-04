@@ -9,15 +9,42 @@
     <link rel="stylesheet" href="signup.html">
 </head>
 <body>
-    <div class="nav-center">
+    <header class="navbar">
+
+        <!--Nav Left side logo Only-->
+        <div class="nav-left">
+            <span class="logo">
+                Not decided yet
+            </span>
+        </div>
+
+        <!-- Navbar center links to other pages -->
+        <div class="nav-center">
             <a href="./index.html" class="current-page">Home</a>
             <a href="./screens/product.html">Products</a>
             <a href="#">About Us</a>
             <a href="./screens/contact.html">Contact Us</a>
-    </div>
-    <form>
-        <div class="Login">
-            <h1>LOG IN</h1>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-container">
+            <img src="/assets/home/search-icon.png" alt="Search" class="search-icon">
+            <input type="text" class="search-bar" placeholder="Search for products...">
+        </div>
+
+        <!-- Navbar right side icons -->
+        <div class="nav-right">
+            <a href="./screens/ecommerce.html" class="icon-btn">
+                <img src="/assets/home/cart-img.png" alt="Cart" width="24" height="24">
+            </a>
+            <a href="./screens/signup.html" class="btn-signup">signup</a>
+            <a href="./screens/Login.html" class="btn-login">login</a>
+        </div>
+
+    </header>
+        <div class="containner">
+            <div class="Login">
+        <h1>Login</h1>
             <div class="one">
             <input type="email" placeholder="Email">
             </div>
@@ -28,8 +55,8 @@
             <button type="submit">LOG IN</button>
         </div>
             <p> Don't have an account?<a href="../screens/signup.html">signup</a></p>
-  </div>
-</form>
+            </div>
+        </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
